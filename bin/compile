@@ -48,8 +48,10 @@ mkdir -p $BUILD_DIR/.profile.d
 cat<<EOF > $BUILD_DIR/.profile.d/init.sh
 PATH="\$PATH:\$HOME/vendor/bin/$NODE_DIR/bin"
 
-cat PATH
-speak "Finished!"
+
 EOF
+
+cat PATH
+speak "Finished!ENRIQUELC"
 
 speak "Finished!"
