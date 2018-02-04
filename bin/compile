@@ -40,11 +40,16 @@ bower install
 speak "Building and bundling Polymer project..."
 polymer build --bundle --js-minify --css-minify --html-minify
 
+cat $BUILD_DIR
+
 mkdir -p $BUILD_DIR/vendor/bin
 mv $BUILD_DIR/$NODE_DIR $BUILD_DIR/vendor/bin/
 mkdir -p $BUILD_DIR/.profile.d
 cat<<EOF > $BUILD_DIR/.profile.d/init.sh
 PATH="\$PATH:\$HOME/vendor/bin/$NODE_DIR/bin"
+
+cat PATH
+speak "Finished!"
 EOF
 
 speak "Finished!"
